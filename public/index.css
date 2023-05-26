@@ -1,0 +1,252 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #f2f5f7;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+body{
+    overflow-x: hidden;
+}
+ 
+nav{
+    height: 6rem;
+    width: 100vw;
+background: linear-gradient(118deg, rgba(34,99,3,1) 0%, rgba(23,218,0,1) 50%, rgba(232,237,8,1) 89%);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    position: fixed;
+    z-index:10 ;
+}
+#inicio{
+    height: 100vh;
+    width: 100vw;
+}
+.botonDetalles{
+    position: absolute;
+    top:80%;
+    right: 30%;
+}
+
+.escalar{
+ position: absolute;
+ left: 0px;
+ top: 0px;
+    width: 100vw;
+    height: 340px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+
+    background-color: rgba(0, 0, 0, 0.568);
+    z-index: 2;
+}
+.escalar img{
+    width: 80vw;
+    height:15vw ;
+  
+
+}
+.dimension{
+    height: 100vh;
+    width: 100vw;
+}
+.nosotros{
+    width: 100vw;
+    height: 100vh;
+    background-color:  rgba(23,218,0,1);
+}
+.excursiones{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(232,237,8,1);
+
+}
+.hospedajes{
+    width: 100vw;
+    height: 100vh;
+    background-color: brown;
+
+}
+.contactos{
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(34,99,3,1);
+}
+
+
+
+/* font-family: 'DM Sans', sans-serif; */
+
+/*Styling Links*/
+.navbarLinks{
+    display: flex;
+    list-style: none; 
+    width: 88vw;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+}
+.navbarLinks li a{
+    color: white;
+    text-decoration: none;
+    margin: 0 0.7vw;
+}
+.navbarLinks li a:hover {
+text-shadow: 2px 2px 2px white,
+2px 2px 4px white,
+2px 2px 8px white;
+}
+.navbarLinks li {
+    position: relative;
+}
+.navbarLinks li a::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color:green;
+    position: absolute;
+    transition: all ease-in-out 250ms;
+    margin: 0 0 0 10%;
+}
+.navbarLinks li a:hover::before{
+    width: 80%;
+}
+
+/*Styling Buttons*/
+.login-button{
+    background-color: transparent;
+    border: 1.5px solid #f2f5f7;
+    border-radius: 2em;
+    padding: 0.6rem 0.8rem;
+    margin-left: 2vw;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+.login-button:hover {
+    color: #131418;
+    background-color: #f2f5f7;
+    border:1.5px solid #f2f5f7;
+    transition: all ease-in-out 350ms;
+}
+.join-button{
+    color: #131418;
+    background-color: white;
+    border: 1.5px solid white;
+    border-radius: 2em;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.join-button:hover {
+    color: #f2f5f7;
+    background-color: transparent;
+    border:1.5px solid #f2f5f7;
+    transition: all ease-in-out 350ms;
+}
+
+/*Styling Hamburger Icon*/
+.hamburger div{
+    width: 30px;
+    height:3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.hamburger{
+    display: none;
+}
+
+/*Stying for small screens*/
+@media screen and (max-width: 800px){
+    nav{
+        position: fixed;
+        z-index: 10;
+    }
+    .hamburger{
+        display:block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 10;
+        transition: all 0.7s ease;
+    }
+    .escalar{
+        height: 280px;
+        
+        align-items: center;
+    }
+    .escalar img{
+        margin-top: 100px;
+        width: 80vw;
+        height:30vw ;
+      
+    
+    }
+    .navbarLinks{
+        position: fixed;
+        background-color: rgb(22, 218, 0);
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        z-index: 4;
+    }
+    .navbarLinks.abrir{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .navbarLinks li{
+        opacity: 0;
+    }
+    .navbarLinks li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .navbarLinks li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .navbarLinks li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .navbarLinks li:nth-child(4){
+        transition: all 0.5s ease 0.7s;
+    }
+    .navbarLinks li:nth-child(5){
+        transition: all 0.5s ease 0.8s;
+    }
+    .navbarLinks li:nth-child(6){
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+    .navbarLinks li:nth-child(7){
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+    li.cerrar{
+        opacity: 1;
+    }
+}
+/*Animating Hamburger Icon on Click*/
+.palanca .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.palanca .line2{
+    transition: all 0.7s ease;
+    width:0;
+}
+.palanca .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
