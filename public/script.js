@@ -15,10 +15,10 @@ hamburger.addEventListener('click', ()=>{
 //se llama a la Api en firestore
 function infoVinoteca() {
 
-    const coleccionVinos = firebase.firestore().collection(""); 
+    const viajes = firebase.firestore().collection("turismoAventura"); 
     
     let dataApi=[]
-  coleccionVinos.get()
+  viajes.get()
     .then((results) => {
     
       const data = results.docs.map((doc) => ({
@@ -26,7 +26,9 @@ function infoVinoteca() {
         ...doc.data(),
       }));
       dataApi.push(...data)
-      arrayProductosApi = dataApi});
+      arrayProductosApi = dataApi
     
-    
+    console.log(dataApi);
+  });
     }
+    infoVinoteca()

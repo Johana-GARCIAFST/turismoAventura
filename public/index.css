@@ -30,6 +30,19 @@ background: linear-gradient(118deg, rgba(34,99,3,1) 0%, rgba(23,218,0,1) 50%, rg
     right: 30%;
 }
 
+.centrar{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.centrar p{
+font-size: 8em;
+font-weight: bolder;
+font-family: 'DM Sans';
+}
+
 .escalar{
  position: absolute;
  left: 0px;
@@ -50,6 +63,9 @@ background: linear-gradient(118deg, rgba(34,99,3,1) 0%, rgba(23,218,0,1) 50%, rg
   
 
 }
+
+
+
 .dimension{
     height: 100vh;
     width: 100vw;
@@ -57,25 +73,25 @@ background: linear-gradient(118deg, rgba(34,99,3,1) 0%, rgba(23,218,0,1) 50%, rg
 .nosotros{
     width: 100vw;
     height: 100vh;
-    background-color:  rgba(23,218,0,1);
+    background-color:  rgb(22, 117, 3) ;
 }
 .excursiones{
     width: 100vw;
     height: 100vh;
-    background-color: rgba(232,237,8,1);
+    background-color:rgba(23,218,0,1);
 
 }
 .hospedajes{
     width: 100vw;
     height: 100vh;
-    background-color: brown;
+    background-color:rgb(87, 218, 0);
 
 }
 .contactos{
 
     width: 100vw;
     height: 100vh;
-    background-color: rgba(34,99,3,1);
+    background-color: rgba(232,237,8,1);
 }
 
 
@@ -164,6 +180,89 @@ text-shadow: 2px 2px 2px white,
     display: none;
 }
 
+footer {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    background: linear-gradient(181deg, rgba(34,99,3,1) 0%, rgba(23,218,0,1) 50%, rgba(232,237,8,1) 89%);
+    flex-wrap: wrap;
+  
+}
+
+
+.iconos ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+.iconos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-decoration-line: none;
+    color: black;
+}
+
+.instagram,
+.facebook,
+.whatsapp {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-end;
+    margin: 10px 10px;
+    font-size: 45px;
+    padding: 9px 11px 8px 11px;
+    outline: solid transparent 2px;
+    border-radius: 30px;
+}
+
+.iconos .instagram:hover {
+    font-size: 40px;
+    color: white;
+    background: linear-gradient(#ffd500e7, #ff7b00e1, #ff006ae1, #d300c5e0, #7538fad8);
+}
+
+.iconos .facebook:hover {
+    font-size: 40px;
+    color: rgb(10, 0, 0);
+    background-color: #2e5bbb;
+}
+
+.iconos .whatsapp:hover {
+    font-size: 40px;
+    color: white;
+    background-color: #28bd2f;
+}
+
+.copyright {
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    font-weight: bolder;
+    margin: 10px 20px 0px 0px;
+}
+
+.copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.copy a {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 20px;
+    color: black;
+}
+
 /*Stying for small screens*/
 @media screen and (max-width: 800px){
     nav{
@@ -174,7 +273,7 @@ text-shadow: 2px 2px 2px white,
         display:block;
         position: absolute;
         cursor: pointer;
-        right: 5%;
+        right: 8%;
         top: 50%;
         transform: translate(-5%, -50%);
         z-index: 10;
@@ -191,6 +290,9 @@ text-shadow: 2px 2px 2px white,
         height:30vw ;
       
     
+    }
+    .centrar p{
+        font-size: 3em;
     }
     .navbarLinks{
         position: fixed;
@@ -237,6 +339,9 @@ text-shadow: 2px 2px 2px white,
     }
     li.cerrar{
         opacity: 1;
+    }
+    footer{
+        justify-content: center;
     }
 }
 /*Animating Hamburger Icon on Click*/
