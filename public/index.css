@@ -24,6 +24,30 @@ background: linear-gradient(118deg, rgba(34,99,3,1) 0%, rgba(23,218,0,1) 50%, rg
     height: 100vh;
     width: 100vw;
 }
+.tituloOferta{
+    position: absolute;
+    top:60%;
+    right: 30%;
+    font-family:'DM Sans' ;
+    font-size:4em;
+    text-shadow: 1px 1px 2px black,
+    1px 1px 4px black
+}
+.duracion{
+    position: absolute;
+    top:70%;
+    right: 30%;
+    font-family:'DM Sans';
+    text-shadow: 1px 1px 2px black,
+    1px 1px 4px black
+}
+.duracion span{
+    color: red;
+    text-shadow:1px 1px 2px black,
+    1px 1px 4px black ;
+}
+
+
 .botonDetalles{
     position: absolute;
     top:80%;
@@ -37,11 +61,22 @@ justify-content: center;
 align-items: center;
 
 }
-.centrar p{
+.centrar .titulo{
 font-size: 8em;
 font-weight: bolder;
 font-family: 'DM Sans';
+cursor:pointer;
 }
+
+.titulo {
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .titulo.active {
+    transform: scale(0.4);
+    opacity: 0.5;
+  }
+
 
 .escalar{
  position: absolute;
@@ -90,7 +125,7 @@ font-family: 'DM Sans';
 .contactos{
 
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     background-color: rgba(232,237,8,1);
 }
 
@@ -291,7 +326,39 @@ footer {
       
     
     }
-    .centrar p{
+
+    .tituloOferta{
+        position: absolute;
+        top:60%;
+        right: 18%;
+        font-family:'DM Sans' ;
+        font-size:1.6em;
+        text-shadow: 1px 1px 2px black,
+        1px 1px 4px black;
+        margin-left: 40px;
+    }
+    .duracion{
+        position: absolute;
+        font-size: 2em;
+        top:70%;
+        right: 10%;
+        font-family:'DM Sans';
+        text-shadow: 1px 1px 2px black,
+        1px 1px 4px black;
+        margin-left: 40px;
+    }
+    .duracion span{
+        color: red;
+        text-shadow:1px 1px 2px black,
+        1px 1px 4px black ;
+    }
+    .botonDetalles{
+        position: absolute;
+        top:85%;
+        right: 30%;
+    }
+
+    .centrar .titulo{
         font-size: 3em;
     }
     .navbarLinks{
@@ -308,7 +375,7 @@ footer {
     }
     .navbarLinks.abrir{
         clip-path: circle(1000px at 90% -10%);
-        -webkit-clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1035px at 90% -10%);
         pointer-events: all;
     }
     .navbarLinks li{

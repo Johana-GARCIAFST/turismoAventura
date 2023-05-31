@@ -1,0 +1,19 @@
+.contenedorVistas{
+    width: 100vw;
+    min-height: 100vh;
+    height: fit-content;
+    background-color:white;
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorVistas div{
+
+
+    
+
+}
+
+
