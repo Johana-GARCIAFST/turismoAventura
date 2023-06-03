@@ -6,6 +6,7 @@
     font-family: sans-serif;
     letter-spacing: 1px;
     font-weight: 300;
+    scroll-behavior: smooth;
 }
 body{
     overflow-x: hidden;
@@ -32,6 +33,17 @@ background: linear-gradient(118deg, rgba(34,99,3,1) 0%, rgba(23,218,0,1) 50%, rg
     font-size:4em;
     text-shadow: 1px 1px 2px black,
     1px 1px 4px black
+}
+.contenedorVistas{
+
+    width: 100vw;
+    min-height: 100vh;
+    height: fit-content;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
 }
 .duracion{
     position: absolute;
@@ -73,7 +85,7 @@ cursor:pointer;
   }
   
   .titulo.active {
-    transform: scale(0.4);
+    transform: scale(0.8);
     opacity: 0.5;
   }
 
@@ -97,6 +109,10 @@ cursor:pointer;
     height:15vw ;
   
 
+}
+.carrusel img{
+    width: 100vw;
+    height: 100vh;
 }
 
 
@@ -222,7 +238,7 @@ footer {
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
-    background: linear-gradient(181deg, rgba(34,99,3,1) 0%, rgba(23,218,0,1) 50%, rgba(232,237,8,1) 89%);
+    background: linear-gradient(118deg, rgba(34,99,3,1) 0%, rgba(23,218,0,1) 50%, rgba(232,237,8,1) 89%);
     flex-wrap: wrap;
   
 }

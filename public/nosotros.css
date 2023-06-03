@@ -1,19 +1,45 @@
-.contenedorVistas{
+.nosotrosVista{
     width: 100vw;
     min-height: 100vh;
     height: fit-content;
-    background-color:white;
-     display: flex;
-    flex-direction: row;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/challenge-5ac03.appspot.com/o/florian-delee-mivGb_fJgL4-unsplash.jpg?alt=media&token=db92e44c-1654-4360-81f2-61ad434a4187&_gl=1*1oad5u6*_ga*ODYwODk4ODUyLjE2NzY3NDc0MTM.*_ga_CW55HF8NVT*MTY4NTU2MzYyNS4yOC4xLjE2ODU1NjM2ODAuMC4wLjA.");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.contenedorVistas div{
-
-
     
-
 }
+
+
+.nosotrosVista div{
+    width: 100vw;
+    height: fit-content;
+    margin-top: 100px;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.341);
+    
+}
+.nosotrosVista h2{
+    color: white;
+    font-weight: bolder;
+    font-size: 2em;
+    font-family:'DM Sans';
+    text-shadow:2px 2px 2px black;
+}
+.nosotrosVista p{
+    font-size: 1.3em;
+    text-shadow:2px 2px 4px black,
+    2px 2px 6px black ;
+}
+
+
+
 
 
